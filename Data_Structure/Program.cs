@@ -12,7 +12,7 @@ namespace Data_Structure
             {
 
                 Console.WriteLine("------------------------Welcome to data structure-----------------------");
-                Console.WriteLine("1.Parmutation 2.Binary Search  3.Exit");
+                Console.WriteLine("1.Parmutation 2.Binary Search  3.Insertion Sort  4.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
 
@@ -29,6 +29,10 @@ namespace Data_Structure
                     case 2:
                         BinarySearch binarySearch = new BinarySearch();
                         binarySearch.binarysearch();
+                        break;
+                    case 3:
+                        InsertionSort insert = new InsertionSort();
+                        insert.Insert();
                         break;
                     default:
                         Console.WriteLine("End");//default condition
