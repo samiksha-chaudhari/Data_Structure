@@ -12,7 +12,7 @@ namespace Data_Structure
             {
 
                 Console.WriteLine("------------------------Welcome to data structure-----------------------");
-                Console.WriteLine("1.Parmutation 2.Exit");
+                Console.WriteLine("1.Parmutation 2.Binary Search  3.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
 
@@ -25,6 +25,10 @@ namespace Data_Structure
                         int n = str.Length;
                         Permutation par = new Permutation();
                         par.permute(str, 0, n - 1);
+                        break;
+                    case 2:
+                        BinarySearch binarySearch = new BinarySearch();
+                        binarySearch.binarysearch();
                         break;
                     default:
                         Console.WriteLine("End");//default condition
