@@ -15,8 +15,8 @@ namespace Data_Structure
 
             Console.WriteLine("Enter word you want to search : ");
             string search = Console.ReadLine();
-
-            int i = Array.BinarySearch(para, search);
+            //array.binarySearch is inbuild method
+            int i = Array.BinarySearch(para, search);//taking index value
 
             if (i >= 0)
                 Console.WriteLine("word found at position " + i + "\n");
