@@ -12,13 +12,14 @@ namespace Data_Structure
             string word1 = Console.ReadLine();
             Console.Write("Enter second word:");
             string word2 = Console.ReadLine();
-            //step 1
+            //conver word1 & 2 to lower case 
+            //conver string word 1 & 2 to char array
             char[] str1 = word1.ToLower().ToCharArray();
             char[] str2 = word2.ToLower().ToCharArray();
-            //Step 2  
+            //for sorting array 
             Array.Sort(str1);
             Array.Sort(str2);
-            //Step 3  
+            //storing sorted array to str
             string New1 = new string(str1);
             string New2 = new string(str2);
             if (New1 == New2)
