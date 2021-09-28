@@ -12,7 +12,7 @@ namespace Data_Structure
             {
 
                 Console.WriteLine("------------------------Welcome to data structure-----------------------");
-                Console.WriteLine("1.Parmutation 2.Binary Search  3.Insertion Sort  4.Bubble Sort  5.Anagram  6.Exit");
+                Console.WriteLine("1.Parmutation 2.Binary Search  3.Insertion Sort  4.Bubble Sort  5.Anagram  6.Merge Sort  7.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
 
@@ -41,6 +41,10 @@ namespace Data_Structure
                     case 5:
                         Anagram anagram = new Anagram();
                         anagram.anagram();
+                        break;
+                    case 6:
+                        MergeSort merge = new MergeSort();
+                        merge.Merging();
                         break;
                     default:
                         Console.WriteLine("End");//default condition
