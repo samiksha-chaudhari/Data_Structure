@@ -1,17 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Data_Structure
 {
-    class Program
+    class DataStructureChoice
     {
-        static void Main(string[] args)
+        public void DataStructure()
         {
             int defcount = 0;//counter to break the while loop
 
             while (defcount == 0)
             {
 
-                Console.WriteLine("------------------------Welcome to data structure-----------------------");
+                Console.WriteLine("------------------------Welcome to data structure Problems-----------------------");
                 Console.WriteLine("1.Algorithm Problems 2.Data Structure Problems 3.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
@@ -23,8 +25,8 @@ namespace Data_Structure
                         algo.algoritham();
                         break;
                     case 2:
-                        DataStructureChoice ds = new DataStructureChoice();
-                        ds.DataStructure();
+                        BinarySearch binarySearch = new BinarySearch();
+                        binarySearch.binarysearch();
                         break;
                     default:
                         Console.WriteLine("End");//default condition
